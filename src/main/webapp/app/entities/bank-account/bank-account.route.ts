@@ -13,17 +13,17 @@ import { Principal } from '../../shared';
 
 export const bankAccountRoute: Routes = [
     {
-        path: 'bank-account',
-        component: BankAccountComponent,
-        data: {
+        path        : 'bank-account',
+        component   : BankAccountComponent,
+        data        : {
             authorities: ['ROLE_USER'],
             pageTitle: 'jhipsterSampleApplicationNg2App.bankAccount.home.title'
         },
-        canActivate: [UserRouteAccessService]
+        canActivate : [UserRouteAccessService]
     }, {
-        path: 'bank-account/:id',
-        component: BankAccountDetailComponent,
-        data: {
+        path        : 'bank-account/:id',
+        component   : BankAccountDetailComponent,
+        data        : {
             authorities: ['ROLE_USER'],
             pageTitle: 'jhipsterSampleApplicationNg2App.bankAccount.home.title'
         },
